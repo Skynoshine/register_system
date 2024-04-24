@@ -1,2 +1,6 @@
 # register_system
- A simple system with login and register in Dart
+O projeto consiste em desenvolver um sistema de login e registro completamente em Dart, utilizando o framework Flutter para construção da interface do usuário. O objetivo principal é criar uma aplicação que permita aos usuários fazerem login em suas contas existentes ou registrarem novas contas.
+
+Funcionalidades Principais:
+
+Login de Usuário: Os usuários poderão fazer login em suas contas utilizando um nome de usuário e senha previamente registrados. Registro de Novos Usuários: Novos usuários poderão se registrar criando uma nova conta. Eles serão solicitados a fornecer um nome de usuário único, uma senha e outras informações relevantes. Validações de Entrada: Serão implementadas validações para garantir que os dados fornecidos pelos usuários durante o registro atendam aos critérios de segurança e formato esperado, como comprimento mínimo da senha, presença de caracteres especiais, etc. Armazenamento de Dados: As informações dos usuários, como nome de usuário e senha, serão armazenadas de forma segura. Dependendo dos requisitos do projeto, isso pode ser feito localmente no dispositivo do usuário ou em um servidor remoto. Interface do Usuário (UI): A interface do usuário será desenvolvida usando o framework Flutter para fornecer uma experiência amigável e intuitiva aos usuários. Isso incluirá telas de login, registro, feedback de validação e mensagens de erro.
