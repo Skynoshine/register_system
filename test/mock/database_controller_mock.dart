@@ -1,4 +1,4 @@
-import '../database/database_controller.dart';
+import '../../bin/src/database/database_controller.dart';
 
 class DatabaseControllerMock extends DatabaseController {
   final Map<String, dynamic> _database = {};

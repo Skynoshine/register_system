@@ -1,8 +1,8 @@
 import 'package:encrypt/encrypt.dart';
 
-import '../controller/login_controller.dart';
-import '../encrypt/encrypt.dart';
-import '../entities/login_entitie.dart';
+import '../../bin/src/controller/login_controller.dart';
+import '../../bin/src/encrypt/encrypt.dart';
+import '../../bin/src/entities/login_entitie.dart';
 import 'database_controller_mock.dart';
 
 class LoginControllerMock extends LoginController {
