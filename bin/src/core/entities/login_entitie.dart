@@ -8,9 +8,12 @@ class LoginEntity {
   });
 
   Map<String, dynamic> toMap() {
+    final now = DateTime.now().toUtc();
     return {
+      'createAt': now.toIso8601String(),
+      'updateAt': now.toIso8601String(),
       'username': username,
-      'encryptedPassword': encryptedPassword,
+      'password': encryptedPassword,
     };
   }
 }

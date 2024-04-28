@@ -1,6 +1,6 @@
 import 'package:mongo_dart/mongo_dart.dart';
 
-import '../dotenv/dotenv.dart';
+import '../../core/dotenv/dotenv.dart';
 
 class DatabaseController {
   late Db _db;

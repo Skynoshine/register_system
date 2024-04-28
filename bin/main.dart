@@ -1,16 +1,15 @@
-import 'src/controller/login_controller.dart';
-import 'src/database/database_controller.dart';
-import 'src/dotenv/dotenv.dart';
+import 'src/core/dotenv/dotenv.dart';
+import 'src/data/controller/http_controller.dart';
+import 'src/data/controller/login_controller.dart';
+import 'src/data/controller/register_controller.dart';
+import 'src/data/database/database_controller.dart';
 
 void main() async {
   Env().loadEnv();
-  final db = DatabaseController();
-  final ct = LoginController();
+  final dbController = DatabaseController();
+  final loginController = LoginController(dbController);
+  final registerController = RegisterController(dbController);
+  final http = HttpController(loginController, registerController);
 
-  final String username = 'example-account@gmail.com';
-  final String password = 'mypassword123';
-
-  await ct.register(username, password);
-  final content = await db.get(username);
-  print('Result: $content');
+  http.startServer(host: 'localhost', port: 8080);
 }
